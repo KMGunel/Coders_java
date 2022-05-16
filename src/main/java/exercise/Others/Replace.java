@@ -1,4 +1,4 @@
-package main.java.exercise;
+package main.java.exercise.Others;
 
 import java.util.Scanner;
 
@@ -6,10 +6,8 @@ public class Replace {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        str = str.replace("x", " ");
-        str= str.trim();
-        str = str.replace(" ","x");
+        str = str.replace("x", " ").trim().replace(" ", "x");
         System.out.println(str);
 
-}
+    }
 }
