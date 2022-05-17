@@ -13,7 +13,7 @@ public class ModularExponentiation {
         for(int i = 1; i <= n; i++)
         {
             number= x * number;
-            ;
+
         }
         System.out.println(number%m);
     }
