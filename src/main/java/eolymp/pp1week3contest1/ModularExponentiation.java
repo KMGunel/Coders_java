@@ -12,10 +12,9 @@ public class ModularExponentiation {
 
         for(int i = 1; i <= n; i++)
         {
-            number= x * number;
+            number= x * number%m;
 
         }
-        System.out.println(number%m);
+        System.out.println(number);
     }
 }
-//        System.out.println((long)Math.pow(x,n)%m);

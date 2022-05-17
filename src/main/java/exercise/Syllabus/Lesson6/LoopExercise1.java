@@ -16,7 +16,7 @@ public class LoopExercise1 {
             int pos = 0;
             int zero = 0;
             for (int i = 1; i <= n; i++) {
-                System.out.printf("%s-ci ədədi daxil edin \n ", i);
+                System.out.printf("%d-ci ədədi daxil edin \n ", i);
                 int num = sc.nextInt();
                 if (num > 0) {
                     pos++;
@@ -26,7 +26,7 @@ public class LoopExercise1 {
                     zero++;
                 }
             }
-            System.out.printf("Nəticə:\nPositiv rəqəmlərin sayı: %s \nNegativ rəqəmlərin sayı: %s \n0-larin sayı: %s", pos, neg, zero);
+            System.out.printf("Nəticə:\nPositiv rəqəmlərin sayı: %d \nNegativ rəqəmlərin sayı: %d \n0-larin sayı: %d", pos, neg, zero);
 
 
         }
