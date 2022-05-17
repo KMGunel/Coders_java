@@ -3,7 +3,10 @@ package main.java.exercise.Syllabus.Lesson4;
 import java.util.Scanner;
 public class Random {
     public static void main(String[] args) {
-        int number = 10;
+        double num = Math.random()*101;
+        int number = (int) num;
+//        Random rand = new Random();
+//        int number = rand.nextInt(101);
         Scanner sc = new Scanner(System.in);
         System.out.println("Let enter the name:");
         String name = sc.nextLine();
