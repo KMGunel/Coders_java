@@ -8,7 +8,14 @@ public class ModularExponentiation {
         long x = sc.nextLong();
         int n = sc.nextInt();
         int m = sc.nextInt();
-        System.out.println((long)Math.pow(x,n)%m);
+        long number = 1;
 
+        for(int i = 1; i <= n; i++)
+        {
+            number= x * number;
+            ;
+        }
+        System.out.println(number%m);
     }
 }
+//        System.out.println((long)Math.pow(x,n)%m);
