@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class SmallestDivisor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double n = sc.nextLong();
-
-        for( int i = 2;i<=n;i++){
-           double m = n/i;
-           int num = (int)m;
-            if(num==m){
-//                if (i==1)
-//                {continue;}
+        long n = sc.nextLong();
+        if (n%2==0){
+            System.out.println(2);
+        }
+        else{
+            for( int i = 3;i<=n;i++){
+            if( n % i == 0 ) {
                 System.out.println(i);
                 break;
             }
-        }
+        }}
+
     }
 }

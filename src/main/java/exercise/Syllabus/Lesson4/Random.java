@@ -12,9 +12,9 @@ public class Random {
         String name = sc.nextLine();
         System.out.println("Let the game begin!");
         System.out.println("Enter the number.");
-        int n = sc.nextInt();
-
-        for ( ; ; n = sc.nextInt() ) {
+        int n=1;
+        for ( int i = 1;i<=n ; i++) {
+            n = sc.nextInt();
             if ( n > number){
             System.out.println("Your number is too big. Please, try again.");
         }
@@ -25,6 +25,7 @@ public class Random {
 
             System.out.printf("Congratulations, %s!\n",name);
             break;
+
         }
         }
 
