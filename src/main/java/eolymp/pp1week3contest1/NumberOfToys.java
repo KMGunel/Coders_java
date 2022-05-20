@@ -2,17 +2,18 @@ package main.java.eolymp.pp1week3contest1;
 
 import java.util.Scanner;
 
-public class IncreaseBy2 {
+public class NumberOfToys {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int sum=0;
         for (int i = 1; i <= n; i++) {
-            int num = sc.nextInt();
-            if (num >= 0) {
-                num = num + 2;
+            int a = sc.nextInt();
+            double b = sc.nextDouble();
+            if (b<50.00){
+                sum=sum+a;
             }
-            System.out.printf("%d ",num);
         }
-
+        System.out.println(sum);
     }
 }
