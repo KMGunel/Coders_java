@@ -6,16 +6,15 @@ public class SmallestDivisor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();
-        if (n%2==0){
-            System.out.println(2);
-        }
-        else{
-            for( int i = 3;i<=n;i++){
-            if( n % i == 0 ) {
-                System.out.println(i);
+        long[] arr=new long[(int) n];
+        long i = 2;
+        for (; i <= n ; i++) {
+            if(n%i==0) {
+                System.out.printf("%d ",i);
                 break;
-            }
-        }}
+                }
+        }
+
 
     }
 }
