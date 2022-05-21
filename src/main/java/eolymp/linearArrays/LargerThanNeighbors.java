@@ -1,9 +1,8 @@
 package main.java.eolymp.linearArrays;
 
-
 import java.util.Scanner;
 
-public class NumberOfPositive {
+public class LargerThanNeighbors {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -12,9 +11,12 @@ public class NumberOfPositive {
         int m = 0;
         for (; i < n ; i++) {
             arr[i] = sc.nextInt();
-            if(arr[i]>0) {
+        }
+        for (i=1; i < n-1 ; i++) {
+            if(arr[i]>arr[i-1] && arr[i]>arr[i+1] ) {
                 m++;
             }
+
         }
         System.out.println(m);
     }
