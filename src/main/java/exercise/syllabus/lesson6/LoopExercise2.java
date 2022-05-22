@@ -1,4 +1,4 @@
-package main.java.exercise.Syllabus.Lesson6;
+package main.java.exercise.syllabus.lesson6;
 
 public class LoopExercise2 {
     public static void main(String[] args) {

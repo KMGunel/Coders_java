@@ -1,4 +1,4 @@
-package main.java.exercise.Syllabus.Lesson6;
+package main.java.exercise.syllabus.lesson6;
 
 
 import java.util.Scanner;
