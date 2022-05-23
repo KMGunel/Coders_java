@@ -2,21 +2,25 @@ package main.java.exercise.others;
 
 import java.util.Scanner;
 
-public class SimpleOrComplexDigit {
+public class SimpleOrComplexDigitWithMethod {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         int n = sc.nextInt();
-        int m=0;
-        for (int i = 2; i < n; i++) {
+
+        simpleOrComplex(n);
+    }
+    public static void simpleOrComplex(int n){
+        int count=0;
+        for (int i = 2; i < Math.sqrt(n); i++) {
             if(n%i==0){
-                m++;
+                count++;
                 break;
             }
         }
         if (n==0){
             System.out.println("Daxil edilən ədəd 0-dır.");
         }
-        else if (m>0){
+        else if (count>0){
             System.out.println("Daxil edilən MÜRƏKKƏB ədəddir.");
         }
         else{
