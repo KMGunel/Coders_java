@@ -5,19 +5,20 @@ import java.util.Scanner;
 public class ModularExponentation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double x = sc.nextDouble();
-        double n = sc.nextDouble();
-        double m = sc.nextDouble();
+        long x = sc.nextLong();
+        int n = sc.nextInt();
+        int m = sc.nextInt();
 
-        System.out.printf("%.0f ", modExp(x, n,m));
+        System.out.println( modExp(x, n,m));
     }
 
-    public static double modExp(double x, double n,double m) {
-        if (n == 1 ) {
-            return x*(1%m);
-        } else {
-            return x * modExp(x, (n - 1)%m,m);
+    public static long modExp(long x, int n,int m) {
+        long number = 1;
+        for (int i = 1; i <=n ; i++) {
+            number = x * number%m ;
         }
+
+        return number;
     }
 
 }

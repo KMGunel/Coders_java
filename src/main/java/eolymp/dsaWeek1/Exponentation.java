@@ -5,18 +5,15 @@ import java.util.Scanner;
 public class Exponentation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double x = sc.nextDouble();
-        double n = sc.nextDouble();
+        long x = sc.nextLong();
+        long n = sc.nextLong();
 
-        System.out.printf("%.0f ", exp(x, n));
+        System.out.println(exp(x, n));
     }
 
-    public static double exp(double x, double n) {
-        if (n == 1 ) {
-            return x;
-        } else {
-            return x * exp(x, (n - 1));
-        }
+    public static long exp(long x, long n) {
+        long number =(long) Math.pow(x,n);
+        return number;
     }
 
 }
