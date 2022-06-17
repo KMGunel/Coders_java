@@ -6,6 +6,10 @@ public class PyramidWithNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        pyramidNumber(n);
+
+    }
+    public static void pyramidNumber(int n){
         int number = 1;
         int count=1;
         int space=(2*n-1)/2;
@@ -15,7 +19,7 @@ public class PyramidWithNumbers {
                 System.out.print(" ");
             }
             for (int j = 0; j < count; j++) {
-                System.out.printf("%d ",number);
+                System.out.printf("%d ", number);
             }
             for (int j = space; j > 0; j--) {
                 System.out.print(" ");
@@ -25,7 +29,6 @@ public class PyramidWithNumbers {
             space--;
             number++;
         }
-
-
     }
+
 }
