@@ -12,31 +12,26 @@ public class checkValidPassword {
 
     public static void checkPassword(String password) {
 
-            char[] arr = password.toCharArray();
-            int countDigit = 0;
-            int countLetterOrDigit = 0;
-            for (char c : arr) {
-                if (Character.isLetterOrDigit(c)) {
-                    countLetterOrDigit++;
-                }
-                if (Character.isDigit(c)) {
-                    countDigit++;
-                }
+        char[] arr = password.toCharArray();
+        int countDigit = 0;
+        int countLetterOrDigit = 0;
+        for (char c : arr) {
+            if (Character.isLetterOrDigit(c)) {
+                countLetterOrDigit++;
             }
-
-            if (arr.length < 10) {
-                System.out.println("A password must have at least ten characters.");
-
-            } else if (countLetterOrDigit < arr.length) {
-                System.out.println("A password consists of only letters and digits.");
-
-            } else if (countDigit < 2) {
-                System.out.println("A password must contain at least two digits.");
-
-            } else {
-                System.out.println("Correct password!");
+            if (Character.isDigit(c)) {
+                countDigit++;
             }
+        }
 
+        if (arr.length < 10) {
+            System.out.println("A password must have at least ten characters.");
+        } else if (countLetterOrDigit < arr.length) {
+            System.out.println("A password consists of only letters and digits.");
+        } else if (countDigit < 2) {
+            System.out.println("A password must contain at least two digits.");
+        } else {
+            System.out.println("Correct password!");
+        }
     }
-
 }
