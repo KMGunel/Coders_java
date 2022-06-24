@@ -6,7 +6,7 @@ public class ReverseMethod {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word:");
-        String str = sc.next();
+        String str = sc.nextLine();
 
         System.out.printf("Reversing word is : %s",reverseMethod(str));
     }
