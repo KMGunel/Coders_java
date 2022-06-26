@@ -35,7 +35,9 @@ public class CollectionEx {
             }
             myList2.add(count);
         }
-        System.out.printf("\nCount max repeat number in my list: %s",findMax(myList2));
+        System.out.printf("\nCount max repeat number in my list: - %s and repeating number is - %s",findMax(myList2),
+                myList.get(myList2.indexOf(findMax(myList2))));
+
     }
 
     public static Integer findMin(List<Integer> myList) {
