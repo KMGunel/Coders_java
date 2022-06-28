@@ -7,9 +7,7 @@ public class Anagrams {
         Scanner sc=new Scanner(System.in);
         StringBuilder a=new StringBuilder(sc.next());
         StringBuilder b=new StringBuilder(sc.next());
-//        anagramm
-//        marganaa
-//        bu sozleri yazdiqda islemir ,elaqeni qura bilmirem sehv haradadir ve ya kod tamamile sehvdir ?
+
         chekAnagram(a,b);
     }
     public static void chekAnagram(StringBuilder a,StringBuilder b){
@@ -18,7 +16,9 @@ public class Anagrams {
                 for (int j = 0; j < b.length(); j++) {
                     if (String.valueOf(a.charAt(i)).equalsIgnoreCase(String.valueOf(b.charAt(j)))) {
                         b.deleteCharAt(j);
-                    }
+                        break;
+
+                    }System.out.println(b);
                 }
             }
             if(b.length()==0){
