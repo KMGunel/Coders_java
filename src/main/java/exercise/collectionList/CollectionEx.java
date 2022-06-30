@@ -40,6 +40,7 @@ public class CollectionEx {
 
     }
 
+
     public static Integer findMin(List<Integer> myList) {
         Integer min = myList.get(0);
         for (Integer integer : myList) {
