@@ -24,8 +24,7 @@ public class MyExTelephone {
                 j=97;
             }else if (myList.get(i)==4) {
                 j=99;
-            }else if (myList.get(i)==5) {
-                j=101;
+
             }else if (myList.get(i)==6) {
                 j=103;
             }else if (myList.get(i)==7) {
@@ -40,7 +39,7 @@ public class MyExTelephone {
                 myNewList.add(115);
                 i+=3;
             }
-            if(i<myList.size()-3 && myList.get(i) == myList.get(i + 1) &&
+            else if(i<myList.size()-3 && myList.get(i) == myList.get(i + 1) &&
                     myList.get(i+1) == myList.get(i + 2)&& myList.get(i+2) == myList.get(i +3) && myList.get(i)==9) {
                 myNewList.add(122);
                 i += 3;

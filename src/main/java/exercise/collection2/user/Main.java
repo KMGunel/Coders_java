@@ -8,7 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Random rand=new Random();
 
-        Set<User>users=new HashSet<>();
+        Set<User> users=new HashSet<>();
         while(users.size()!=5) {
             User user = new User(rand.nextInt(1000), sc.next(), sc.next());
             users.add(user);
@@ -17,5 +17,6 @@ public class Main {
         while (i.hasNext()){
             System.out.println(i.next());
         }
+
     }
 }
