@@ -1,6 +1,7 @@
 package main.java.exercise.student;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 import java.util.function.Predicate;
@@ -67,11 +68,24 @@ public class Main {
         students.sort(nameCompare);
         System.out.println(students);
 
+
+        for (int i = 0; i < students.size(); i++){
+        Collections.sort(students, new CompareByAge());
+        }
+        System.out.println(students);
+
     }
 }
+class CompareByAge implements Comparator<Student> {
+    public int compare(Student a, Student b)
+    {
+        return a.getAge() - b.getAge();
+    }
+}
+
 @FunctionalInterface
-    interface AgeCompare{
-    void ageCompareFunc(ArrayList<Student> students,Student student);
+    interface AgeCompare {
+    void ageCompareFunc(Student a, Student b);
 }
 
 @FunctionalInterface
